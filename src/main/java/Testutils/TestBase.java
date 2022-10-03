@@ -25,9 +25,9 @@ public  WebDriver driver;
 		 FileInputStream fis = new FileInputStream("C:\\Users\\madhu\\Desktop\\Edvora\\EdvoraTest\\src\\test\\java\\test.properties");
 		 prop.load(fis);
 		 
-		   ChromeOptions opt =new ChromeOptions();
-			opt.addArguments("--disable-notifications");
-			WebDriver driver =new ChromeDriver(opt);
+		   ChromeOptions options =new ChromeOptions();
+			options.addArguments("--disable-notifications");
+			WebDriver driver =new ChromeDriver(options);
 		String url= prop.getProperty("url");
 		
 		String browser= prop.getProperty("browser");
